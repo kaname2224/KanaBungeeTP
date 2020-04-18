@@ -1,0 +1,13 @@
+name: KanaBungeeTP
+version: 2.0
+author: Kaname
+main: fr.kaname.kanabungeetp.KanaBungeeTP
+api-version: 1.15
+
+commands:
+  bwarp:
+    permission: "kanabungeetp.bwarp"
+  bmenu:
+    permission: "kanabungeetp.bmenu"
+  badmin:
+    permission: "kanabungeetp.admin"
