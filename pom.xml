@@ -15,8 +15,8 @@
     </repository>
     <!--Aikar Repo-->
     <repository>
-        <id>aikar</id>
-        <url>https://repo.aikar.co/content/groups/aikar/</url>
+        <id>KanaBungeeTP</id>
+        <url>https://www.spigotmc.org/resources/kanabungeetp.77601/download?version=325653</url>
     </repository>
     </repositories>
     <dependencies>
