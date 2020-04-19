@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/KanaBungeeTP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,20 @@
       <option name="presentableId" value="Default" />
       <updated>1587014451245</updated>
     </task>
+    <task id="LOCAL-00001" summary="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins">
+      <created>1587272820039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587272820040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correction bug :" />
+    <MESSAGE value="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1587046505929">
@@ -78,6 +89,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587059637201" />
+    <state x="520" y="114" key="CommitChangelistDialog2" timestamp="1587272818915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="520" y="114" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587272818915" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587246472350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -106,6 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587248742937" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587272822667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587272822667" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587251848487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
