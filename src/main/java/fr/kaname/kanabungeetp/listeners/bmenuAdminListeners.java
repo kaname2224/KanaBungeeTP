@@ -46,18 +46,26 @@ public class bmenuAdminListeners implements Listener {
             ItemStack clickedItem = event.getCurrentItem();
             Material mat = clickedItem.getType();
 
-            List<Integer> SlotList = new ArrayList<>();
-            SlotList.add(12);
-            SlotList.add(13);
-            SlotList.add(14);
-            SlotList.add(21);
-            SlotList.add(22);
-            SlotList.add(23);
+            List<Integer> slotServerAvailable = new ArrayList<>();
+            slotServerAvailable.add(10);
+            slotServerAvailable.add(11);
+            slotServerAvailable.add(12);
+            slotServerAvailable.add(13);
+            slotServerAvailable.add(14);
+            slotServerAvailable.add(15);
+            slotServerAvailable.add(16);
+            slotServerAvailable.add(19);
+            slotServerAvailable.add(20);
+            slotServerAvailable.add(21);
+            slotServerAvailable.add(22);
+            slotServerAvailable.add(23);
+            slotServerAvailable.add(24);
+            slotServerAvailable.add(25);
 
 
-            int index = SlotList.indexOf(Slot) + 1;
+            int index = slotServerAvailable.indexOf(Slot);
 
-            if (SlotList.contains(Slot)) {
+            if (slotServerAvailable.contains(Slot)) {
                 if (mat == Material.GLASS) {
                     db.setDisplay(true, serverName, index);
                     player.sendMessage("§2Le slot du serveur a bien été changé");

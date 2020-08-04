@@ -12,4 +12,3 @@ database:
 
   tables:
     servers: "KBT_servers"
-    worlds: "KBT_worlds"

@@ -71,22 +71,30 @@ public class bmenuAdd {
         }
 
         List<Integer> slotAvailable = new ArrayList<>();
+        slotAvailable.add(10);
+        slotAvailable.add(11);
         slotAvailable.add(12);
         slotAvailable.add(13);
         slotAvailable.add(14);
+        slotAvailable.add(15);
+        slotAvailable.add(16);
+        slotAvailable.add(19);
+        slotAvailable.add(20);
         slotAvailable.add(21);
         slotAvailable.add(22);
         slotAvailable.add(23);
+        slotAvailable.add(24);
+        slotAvailable.add(25);
 
-        List<Material> materialList = new ArrayList<>(6);
-        for (int i = 0; i <= 5; i++) {
+        List<Material> materialList = new ArrayList<>(14);
+        for (int i = 0; i <= 13; i++) {
             materialList.add(null);
         }
 
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 13; i++) {
             materialList.set(i, Material.GLASS);
             for (Servers srv : serversList) {
-                if (srv.getSlot() == (i + 1)) {
+                if (srv.getSlot() == i) {
                     materialList.set(i, srv.getMaterial());
                 }
             }
@@ -108,7 +116,7 @@ public class bmenuAdd {
                 inv.setItem(slotAvailable.get(i), emptySlot);
             } else {
                 for (Servers srv : serversList) {
-                    if (srv.getSlot() == (i + 1)) {
+                    if (srv.getSlot() == i) {
                         if (srv.getSlot() == server.getSlot()) {
 
                             ItemStack serverSlot = new ItemStack(server.getMaterial());
