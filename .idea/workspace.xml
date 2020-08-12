@@ -22,10 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="Deleted useless sql method">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597249893448</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update pom">
+      <created>1597250396661</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597250396661</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update workflows">
+      <created>1597250545820</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597250545820</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,41 +172,43 @@
     <MESSAGE value="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins" />
     <MESSAGE value="Added GitHub Workflow" />
     <MESSAGE value="Deleted useless sql method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted useless sql method" />
+    <MESSAGE value="Update pom" />
+    <MESSAGE value="Update workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workflows" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597248176701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248176701" />
-    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597250228302">
+    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597250545383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250228302" />
-    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1597250186510">
+    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250545383" />
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1597251640517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702902" />
-    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250186510" />
-    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1597250186510">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597251640517" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1597251640517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702901" />
-    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250186510" />
-    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1597250186510">
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597251640517" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1597251640517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702900" />
-    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250186510" />
-    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1597250186510">
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597251640517" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1597251640517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702902" />
-    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250186510" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597251640517" />
     <state x="202" y="84" width="1384" height="924" key="IDE.errors.dialog" timestamp="1597249831326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="126" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248143461" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597249895172">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597250546962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249895172" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597250546962" />
     <state x="490" y="268" key="caller.chooser.dialog" timestamp="1597249587046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
