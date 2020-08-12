@@ -59,11 +59,7 @@ public class KanaBungeeTP extends JavaPlugin {
 	public PluginMessageManagers getPluginMessageManager() {
 		return pluginMessageManager;
 	}
-	
-	public Connection getSqlConnection() {
-		return this.conn;
-	}
-	
+
 	public void setServers(String[] servers) {
 		this.servers = servers;
 	}
