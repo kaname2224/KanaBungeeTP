@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/KanaBungeeTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/KanaBungeeTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597249610830</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted useless sql method">
+      <created>1597249732268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597249732268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,10 +163,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248176701" />
-    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597249610406">
+    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597249731816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249610406" />
+    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249731816" />
     <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1597248045816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,14 +191,18 @@
     <state width="1323" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702902" />
     <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248045816" />
+    <state x="202" y="84" width="1384" height="924" key="IDE.errors.dialog" timestamp="1597249831326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="202" y="84" width="1384" height="924" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249831326" />
     <state x="738" y="126" key="SettingsEditor" timestamp="1597248143461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="126" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248143461" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597249612001">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597249734572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249612001" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249734572" />
     <state x="490" y="268" key="caller.chooser.dialog" timestamp="1597249587046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

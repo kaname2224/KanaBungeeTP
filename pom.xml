@@ -40,7 +40,7 @@
     <distributionManagement>
         <repository>
             <id>GitHub</id>
-            <url>https://maven.pkg.github.com/kaname2224</url>
+            <url>https://maven.pkg.github.com/kaname2224/KanaBungeeTP2</url>
         </repository>
     </distributionManagement>
 
