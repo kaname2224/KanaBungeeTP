@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="" />
+    <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/KanaBungeeTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/KanaBungeeTP.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -108,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597249146356</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added GitHub Workflow">
+      <created>1597249530872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597249530872</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Deleted useless sql method">
+      <created>1597249610830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597249610830</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,17 +148,18 @@
     <MESSAGE value="Correction bug :" />
     <MESSAGE value="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins" />
     <MESSAGE value="Added GitHub Workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GitHub Workflow" />
+    <MESSAGE value="Deleted useless sql method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted useless sql method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597248176701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248176701" />
-    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597249145830">
+    <state x="436" y="88" key="CommitChangelistDialog2" timestamp="1597249610406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249145830" />
+    <state x="436" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249610406" />
     <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1597248045816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,10 +188,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="126" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248143461" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597249522691">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597249612001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249522691" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249612001" />
+    <state x="490" y="268" key="caller.chooser.dialog" timestamp="1597249587046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="268" key="caller.chooser.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597249587046" />
     <state x="373" y="240" width="1253" height="677" key="run.anything.popup" timestamp="1597246938489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
