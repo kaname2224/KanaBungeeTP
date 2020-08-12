@@ -51,7 +51,7 @@
         <repository>
             <id>GitHub</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/kaname2224/KanaBungeeTP2</url>
+            <url>https://maven.pkg.github.com/kaname2224/KanaBungeeTP</url>
         </repository>
     </distributionManagement>
 
