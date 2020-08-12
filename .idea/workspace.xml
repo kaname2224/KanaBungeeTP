@@ -23,39 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f5217da-8ff4-4d49-81ee-e1f43b91d89e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflow/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KanaBungeeTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KanaBungeeTP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/commands/menu/InvMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/commands/menu/InvMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/commands/menu/bmenuAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/commands/menu/bmenuAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/MenuListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/bmenuAdminListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kaname/kanabungeetp/listeners/bmenuAdminListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/KanaBungeeTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/KanaBungeeTP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/Commandes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/Commandes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/AdminMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/AdminMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/AdminServerMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/AdminServerMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/InvMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/InvMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/bmenuAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/commands/menu/bmenuAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/AdminMenuListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/AdminMenuListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/ChatListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/ChatListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/EventListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/EventListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/EventListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/MenuListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/MenuListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/PluginMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/PluginMessageListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/bmenuAdminListeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/listeners/bmenuAdminListeners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/CommandeCompletor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/CommandeCompletor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/PluginMessageManagers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/PluginMessageManagers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/completors/BadminCompletor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/managers/completors/BadminCompletor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/objects/Servers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/kaname/kanabungeetp/objects/Servers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +49,13 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="Maven Install" />
+      </list>
     </option>
   </component>
   <component name="ProjectId" id="1abq4j0S4nmDJXwSlTeGz8MUWPC" />
@@ -86,6 +64,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -93,7 +72,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -101,6 +80,14 @@
       <recent name="fr.kaname.kanabungeetp.managers.completors" />
       <recent name="fr.kaname.kanabungeetp.managers" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install:install-file" />
+      <command value="mvn install:install-file -DgroupId=fr.kaname -DartifactId=KanaBungeeTP -Dversion=2.1.0 -Dfile=target/KanaBungeeTP-2.1.0.jar -Dpackaging=jar -DgeneratePom=true -DlocalRepositoryPath=.  -DcreateChecksum=true " />
+      <command value="mvn deploy -Dregistry=https://maven.pkg.github.com/kaname2224 -Dtoken=GH_TOKEN" />
+      <command value="mvn deploy -Dregistry=https://maven.pkg.github.com/kaname2224 -Dtoken=eb6b3b0491ed3765187f0a7e9f5ef870d55a1b3e" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -142,25 +129,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="Correction bug : Le plugin enlevais l'autocomplètion de certaines commandes d'autre plugins" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="126" key="GridCell.Tab.0.bottom" timestamp="1596551702902">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597248176701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248176701" />
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1597248045816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702902" />
-    <state width="1877" height="126" key="GridCell.Tab.0.center" timestamp="1596551702901">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248045816" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1597248045816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702901" />
-    <state width="1877" height="126" key="GridCell.Tab.0.left" timestamp="1596551702900">
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248045816" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1597248045815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702900" />
-    <state width="1877" height="126" key="GridCell.Tab.0.right" timestamp="1596551702902">
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248045815" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1597248045816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@-1366.0.1366.728" timestamp="1596547856872" />
     <state width="1877" height="126" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1596551702902" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248045816" />
+    <state x="738" y="126" key="SettingsEditor" timestamp="1597248143461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="126" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597248143461" />
+    <state x="373" y="240" width="1253" height="677" key="run.anything.popup" timestamp="1597246938489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="373" y="240" width="1253" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597246938489" />
   </component>
 </project>

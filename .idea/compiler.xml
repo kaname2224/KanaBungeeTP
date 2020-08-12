@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile name="Annotation profile for KanaBungeeTP" enabled="true">
+        <sourceOutputDir name="../../Desktop/KBTP maven/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../Desktop/KBTP maven/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="KanaBungeeTP" />
       </profile>
