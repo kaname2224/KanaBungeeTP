@@ -3,16 +3,16 @@ package fr.kaname.kanabungeetp;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import fr.kaname.kanabungeetp.commands.Commandes;
 import fr.kaname.kanabungeetp.listeners.*;
 import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -20,13 +20,13 @@ import fr.kaname.kanabungeetp.managers.DatabaseManager;
 import fr.kaname.kanabungeetp.managers.PluginMessageManagers;
 
 public class KanaBungeeTP extends JavaPlugin {
-	
-	private Connection conn;
+
 	private String serverName;
-	private DatabaseManager db;
+	private final DatabaseManager db;
 	private PluginMessageManagers pluginMessageManager;
 	private String[] servers;
-	private Map<UUID, String> mapChangeName = new HashMap<>();
+	private final Map<UUID, String> mapChangeName = new HashMap<>();
+	private final Map<UUID, Location> teleportMap = new HashMap<>();
 	
 	public KanaBungeeTP() throws IOException, SQLException {
 		db = new DatabaseManager(this);
@@ -35,8 +35,8 @@ public class KanaBungeeTP extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		saveDefaultConfig();
-		this.getCommand("badmin").setExecutor(new Commandes(this));
-		this.getCommand("bmenu").setExecutor(new Commandes(this));
+		Objects.requireNonNull(this.getCommand("badmin")).setExecutor(new Commandes(this));
+		Objects.requireNonNull(this.getCommand("bmenu")).setExecutor(new Commandes(this));
 		getServer().getMessenger().registerIncomingPluginChannel(this, "BungeeCord", new PluginMessageListener(this));
 		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 		getServer().getPluginManager().registerEvents(new EventListener(this), this);
@@ -44,24 +44,23 @@ public class KanaBungeeTP extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new AdminMenuListener(this), this);
 		getServer().getPluginManager().registerEvents(new ChatListener(this), this);
 		getServer().getPluginManager().registerEvents(new bmenuAdminListeners(this), this);
-		serverName = getConfig().getString("currentServerBungeeName");
 		pluginMessageManager = new PluginMessageManagers(this);
 	}
 	
 	public String getServerName() {
 		return this.serverName;
 	}
-	
+
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
+	}
+
 	public DatabaseManager getDatabaseManager() {
 		return this.db;
 	}
 	
 	public PluginMessageManagers getPluginMessageManager() {
 		return pluginMessageManager;
-	}
-
-	public Connection getSqlConnection() {
-		return this.conn;
 	}
 
 	public void setServers(String[] servers) {
@@ -91,14 +90,25 @@ public class KanaBungeeTP extends JavaPlugin {
 		player.sendPluginMessage(this, "BungeeCord", b.toByteArray());
 	}
 	
-	public void send_world(Player player, World world, String worldName) {
-		Location loc = new Location(world, world.getSpawnLocation().getX(), world.getSpawnLocation().getY(), world.getSpawnLocation().getZ());
-		player.sendMessage("§3[KanaBungeeTP] §eyou will be teleport to world §6" + worldName);
-		player.teleport(loc);
+	public void teleportPlayer(Player player, Location location) {
+		if (player != null && teleportMap.containsKey(player.getUniqueId())) {
+			player.teleport(location);
+			teleportMap.remove(player.getUniqueId());
+		}
 	}
 
-	public void setChangeNameListener(Map<UUID, String> mapChangeName) {
-		this.mapChangeName = mapChangeName;
+	public void teleportPlayer(Player player, Location location, String serverName) {
+
+		if (!serverName.equals(this.getServerName())) {
+			this.send_server(player, serverName);
+			this.getPluginMessageManager().sendTeleportRequest(player, location, serverName);
+		} else {
+			player.teleport(location);
+		}
+	}
+
+	public Map<UUID, Location> getTeleportMap() {
+		return teleportMap;
 	}
 
 	public Map<UUID, String> getMapChangeName(){

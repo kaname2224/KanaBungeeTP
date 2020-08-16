@@ -36,12 +36,14 @@ public class MenuListener implements Listener {
 		slotServerAvailable.add(10);
 		slotServerAvailable.add(11);
 		slotServerAvailable.add(12);
-		slotServerAvailable.add(19);
-		slotServerAvailable.add(20);
-		slotServerAvailable.add(21);
+		slotServerAvailable.add(13);
 		slotServerAvailable.add(14);
 		slotServerAvailable.add(15);
 		slotServerAvailable.add(16);
+		slotServerAvailable.add(19);
+		slotServerAvailable.add(20);
+		slotServerAvailable.add(21);
+		slotServerAvailable.add(22);
 		slotServerAvailable.add(23);
 		slotServerAvailable.add(24);
 		slotServerAvailable.add(25);

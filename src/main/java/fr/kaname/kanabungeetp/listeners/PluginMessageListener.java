@@ -1,6 +1,8 @@
 package fr.kaname.kanabungeetp.listeners;
 
 import fr.kaname.kanabungeetp.KanaBungeeTP;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import com.google.common.io.ByteArrayDataInput;
@@ -9,11 +11,18 @@ import com.google.common.io.ByteStreams;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import fr.kaname.kanabungeetp.managers.DatabaseManager;
 
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 public class PluginMessageListener implements org.bukkit.plugin.messaging.PluginMessageListener {
 
 	private KanaBungeeTP main;
 	private DatabaseManager db;
-	
+
 	public PluginMessageListener(KanaBungeeTP main) {
 		this.main = main;
 		this.db = main.getDatabaseManager();
@@ -24,11 +33,51 @@ public class PluginMessageListener implements org.bukkit.plugin.messaging.Plugin
 		if(channel.equals("BungeeCord")) {
 			ByteArrayDataInput in = ByteStreams.newDataInput(bytes);
 			String subChannel = in.readUTF();
-			
+
 			if(subChannel.equals("GetServers")) {
 				String[] servers = in.readUTF().split(", ");
 				main.setServers(servers);
 				db.checkServers(servers);
+			}
+
+			if (subChannel.equals("GetServer")) {
+				String name = in.readUTF();
+				main.getLogger().info("Server detected as : " + name);
+				main.setServerName(name);
+			}
+
+			if (subChannel.equals("Teleport")) {
+
+				boolean complete = false;
+
+				double locX = 0;
+				double locY = 0;
+				double locZ = 0;
+				UUID uuid = null;
+
+				short len = in.readShort();
+				byte[] msgbytes = new byte[len];
+
+				in.readFully(msgbytes);
+
+				DataInputStream msgin = new DataInputStream(new ByteArrayInputStream(msgbytes));
+				try {
+					String playerUUID = msgin.readUTF();
+					uuid = UUID.fromString(playerUUID);
+					locX = msgin.readDouble();
+					locY = msgin.readDouble();
+					locZ = msgin.readDouble();
+
+					complete = true;
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+
+				if (complete) {
+					Location location = new Location(Bukkit.getWorld("spleef"), locX, locY, locZ);
+					main.getTeleportMap().put(uuid, location);
+				}
+
 			}
 		}
 		
