@@ -33,7 +33,7 @@ public class EventListener implements Listener {
 			}, 10);
 		}
 
-		if (main.getTeleportMap().containsKey(player.getUniqueId())) {
+		if (main.getTeleportMap().containsKey(player.getUniqueId()) && player.isOnline()) {
 			main.teleportPlayer(player, main.getTeleportMap().get(player.getUniqueId()));
 		}
 

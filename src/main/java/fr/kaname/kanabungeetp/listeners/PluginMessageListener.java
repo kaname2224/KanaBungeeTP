@@ -54,6 +54,7 @@ public class PluginMessageListener implements org.bukkit.plugin.messaging.Plugin
 				double locY = 0;
 				double locZ = 0;
 				UUID uuid = null;
+				String worldName = null;
 
 				short len = in.readShort();
 				byte[] msgbytes = new byte[len];
@@ -62,8 +63,8 @@ public class PluginMessageListener implements org.bukkit.plugin.messaging.Plugin
 
 				DataInputStream msgin = new DataInputStream(new ByteArrayInputStream(msgbytes));
 				try {
-					String playerUUID = msgin.readUTF();
-					uuid = UUID.fromString(playerUUID);
+					uuid = UUID.fromString(msgin.readUTF());
+					worldName = msgin.readUTF();
 					locX = msgin.readDouble();
 					locY = msgin.readDouble();
 					locZ = msgin.readDouble();
@@ -74,7 +75,7 @@ public class PluginMessageListener implements org.bukkit.plugin.messaging.Plugin
 				}
 
 				if (complete) {
-					Location location = new Location(Bukkit.getWorld("spleef"), locX, locY, locZ);
+					Location location = new Location(Bukkit.getServer().getWorld(worldName), locX, locY, locZ);
 					main.getTeleportMap().put(uuid, location);
 				}
 

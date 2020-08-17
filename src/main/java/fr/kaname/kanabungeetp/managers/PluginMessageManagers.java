@@ -45,7 +45,7 @@ public class PluginMessageManagers {
 
 	}
 
-	public void sendTeleportRequest(Player player, Location location, String server) {
+	public void sendTeleportRequest(Player player, Location location, String server, String worldName) {
 
 		if (player == null) {
 			return;
@@ -61,6 +61,7 @@ public class PluginMessageManagers {
 
 		try {
 			msgout.writeUTF(player.getUniqueId().toString());
+			msgout.writeUTF(worldName);
 			msgout.writeDouble(location.getX());
 			msgout.writeDouble(location.getY());
 			msgout.writeDouble(location.getZ());

@@ -12,6 +12,7 @@ import java.util.UUID;
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import fr.kaname.kanabungeetp.commands.Commandes;
 import fr.kaname.kanabungeetp.listeners.*;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -97,12 +98,13 @@ public class KanaBungeeTP extends JavaPlugin {
 		}
 	}
 
-	public void teleportPlayer(Player player, Location location, String serverName) {
+	public void teleportPlayer(Player player, Location location, String serverName, String worldName) {
 
 		if (!serverName.equals(this.getServerName())) {
 			this.send_server(player, serverName);
-			this.getPluginMessageManager().sendTeleportRequest(player, location, serverName);
+			this.getPluginMessageManager().sendTeleportRequest(player, location, serverName, worldName);
 		} else {
+			location.setWorld(Bukkit.getWorld(worldName));
 			player.teleport(location);
 		}
 	}
