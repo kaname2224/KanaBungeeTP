@@ -1,14 +1,11 @@
 package fr.kaname.kanabungeetp.listeners;
 
 import fr.kaname.kanabungeetp.KanaBungeeTP;
-import fr.kaname.kanabungeetp.managers.CommandeCompletor;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-
-import java.util.UUID;
 
 public class EventListener implements Listener {
 

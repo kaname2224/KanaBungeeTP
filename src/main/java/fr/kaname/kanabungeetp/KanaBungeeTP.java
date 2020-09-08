@@ -38,6 +38,7 @@ public class KanaBungeeTP extends JavaPlugin {
 		saveDefaultConfig();
 		Objects.requireNonNull(this.getCommand("badmin")).setExecutor(new Commandes(this));
 		Objects.requireNonNull(this.getCommand("bmenu")).setExecutor(new Commandes(this));
+		Objects.requireNonNull(this.getCommand("bwarp")).setExecutor(new Commandes(this));
 		getServer().getMessenger().registerIncomingPluginChannel(this, "BungeeCord", new PluginMessageListener(this));
 		getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 		getServer().getPluginManager().registerEvents(new EventListener(this), this);
@@ -45,6 +46,7 @@ public class KanaBungeeTP extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new AdminMenuListener(this), this);
 		getServer().getPluginManager().registerEvents(new ChatListener(this), this);
 		getServer().getPluginManager().registerEvents(new bmenuAdminListeners(this), this);
+		getServer().getPluginManager().registerEvents(new autocompleteListener(this), this);
 		pluginMessageManager = new PluginMessageManagers(this);
 	}
 	
