@@ -61,14 +61,6 @@ public class DatabaseManager {
     			  "`Desc` TEXT NULL," +
     			  "`Display` BIT NULL," +
     			  "PRIMARY KEY (`id`))");
-    	
-		this.getSqlStatement().execute("CREATE TABLE IF NOT EXISTS `" + this.worldTable + "` (" +
-				  "`id` INT NOT NULL AUTO_INCREMENT," +
-				  "`Name` VARCHAR(45) NULL," +
-				  "`WorldName` VARCHAR(45) NULL," +
-				  "`Material` VARCHAR(45) NULL," +
-				  "`Desc` TEXT NULL," +
-				  "PRIMARY KEY (`id`))");
     }
     
     private Statement getSqlStatement(){
