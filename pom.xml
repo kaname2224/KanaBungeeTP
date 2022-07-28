@@ -64,6 +64,12 @@
                 <directory>C:\Users\Maxime\Documents\Programmation\javaPluginMc\Serveurs_Mc\1.15.2\Lobby 1.15.2\plugins</directory>
             </build>
         </profile>
+        <profile>
+            <id>Local</id>
+            <build>
+                <directory>G:\code\KanaBungeeTP</directory>
+            </build>
+        </profile>
     </profiles>
 
 </project>

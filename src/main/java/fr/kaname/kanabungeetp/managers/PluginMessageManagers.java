@@ -1,5 +1,6 @@
 package fr.kaname.kanabungeetp.managers;
 
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -30,15 +31,6 @@ public class PluginMessageManagers {
 	public void getServers(Player player) {
 		ByteArrayDataOutput out = ByteStreams.newDataOutput();
 		out.writeUTF("GetServers");
-		if (player != null) {
-			player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());
-		}
-
-	}
-
-	public void getServerName(Player player) {
-		ByteArrayDataOutput out = ByteStreams.newDataOutput();
-		out.writeUTF("GetServer");
 		if (player != null) {
 			player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());
 		}
