@@ -3,6 +3,7 @@ package fr.kaname.kanabungeetp.listeners;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -66,7 +67,7 @@ public class MenuListener implements Listener {
 					String sendServerName = server.getBungeeName();
 					
 					if(!sendServerName.equals(serverName)) {
-						main.send_server(player, sendServerName);
+						ApiBukkit.teleportPlayerToServer(player, serverName);
 					} else {
 						player.sendMessage("§3[KanaBungeeTP] §eYou are already connected to this server !");
 					}
