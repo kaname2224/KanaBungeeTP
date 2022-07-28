@@ -40,6 +40,14 @@
             <version>1.16.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <!--ApiBukkit-->
+        <dependency>
+            <groupId>fr.felix911</groupId>
+            <artifactId>apiBukkit</artifactId>
+            <version>0.1</version>
+            <scope>system</scope>
+            <systemPath>G:/code/Librairies/api/ApiBukkit-0.1.jar</systemPath>
+        </dependency>
     </dependencies>
     <distributionManagement>
         <repository>

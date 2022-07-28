@@ -1,5 +1,6 @@
 package fr.kaname.kanabungeetp.listeners;
 
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import fr.kaname.kanabungeetp.commands.menu.AdminMenu;
 import fr.kaname.kanabungeetp.commands.menu.AdminServerMenu;
@@ -105,7 +106,7 @@ public class AdminMenuListener implements Listener {
                 String serverName = event.getInventory().getItem(4).getItemMeta().getDisplayName().replace("§aInformation de §2", "");
                 Servers server = db.getServer(serverName);
 
-                plugin.send_server(player, server.getBungeeName());
+                ApiBukkit.teleportPlayerToServer(player, server.getServerName());
             } else if (clickedItem.getItemMeta().getDisplayName().equals(ChatColor.DARK_PURPLE + "Hide Server")) {
                 String serverName = event.getInventory().getItem(4).getItemMeta().getDisplayName().replace("§aInformation de §2", "");
                 db.setDisplay(false, serverName, -1);

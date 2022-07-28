@@ -1,5 +1,6 @@
 package fr.kaname.kanabungeetp.commands;
 
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import fr.kaname.kanabungeetp.objects.Servers;
 import org.bukkit.Bukkit;
@@ -82,7 +83,7 @@ public class Commandes implements CommandExecutor {
 
 						if (!bungeeName.equals(plugin.getServerName())) {
 							sender.sendMessage("§3[KanaBungeeTP] §e" + target.getName() + " will be teleport to server " + bungeeName + " !");
-							plugin.send_server(target, bungeeName);
+							ApiBukkit.teleportPlayerToServer(player, bungeeName);
 						} else {
 							sender.sendMessage("§3[KanaBungeeTP] §eThis player is already connected to this server !");
 						}
@@ -94,7 +95,7 @@ public class Commandes implements CommandExecutor {
 				} else {
 					if(!bungeeName.equals(plugin.getServerName()) && player != null) {
 						if (isOpen) {
-							plugin.send_server(player, bungeeName);
+							ApiBukkit.teleportPlayerToServer(player, bungeeName);
 						} else {
 							player.sendMessage("§3[KanaBungeeTP] §cServer closed");
 						}

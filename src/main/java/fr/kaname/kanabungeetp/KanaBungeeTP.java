@@ -10,6 +10,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.commands.Commandes;
 import fr.kaname.kanabungeetp.listeners.*;
 import org.bukkit.Bukkit;
@@ -74,25 +75,6 @@ public class KanaBungeeTP extends JavaPlugin {
 		return this.servers;
 	}
 
-	public void send_server(Player player, String serverName) {
-		ByteArrayOutputStream b = new ByteArrayOutputStream();
-		DataOutputStream out = new DataOutputStream(b);
-		
-		try {
-			
-			out.writeUTF("Connect");
-			out.writeUTF(serverName);
-			
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-			
-		}
-		
-		player.sendMessage("§3[KanaBungeeTP] §eyou will be teleport to server §6" + serverName);
-		player.sendPluginMessage(this, "BungeeCord", b.toByteArray());
-	}
-	
 	public void teleportPlayer(Player player, Location location) {
 		if (player != null && teleportMap.containsKey(player.getUniqueId())) {
 			player.teleport(location);
@@ -103,7 +85,7 @@ public class KanaBungeeTP extends JavaPlugin {
 	public void teleportPlayer(Player player, Location location, String serverName, String worldName) {
 
 		if (!serverName.equals(this.getServerName())) {
-			this.send_server(player, serverName);
+			ApiBukkit.teleportPlayerToServer(player, serverName);
 			this.getPluginMessageManager().sendTeleportRequest(player, location, serverName, worldName);
 		} else {
 			location.setWorld(Bukkit.getWorld(worldName));
