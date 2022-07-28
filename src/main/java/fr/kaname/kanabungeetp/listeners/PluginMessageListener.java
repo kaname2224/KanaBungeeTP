@@ -40,12 +40,6 @@ public class PluginMessageListener implements org.bukkit.plugin.messaging.Plugin
 				db.checkServers(servers);
 			}
 
-			if (subChannel.equals("GetServer")) {
-				String name = in.readUTF();
-				main.getLogger().info("Server detected as : " + name);
-				main.setServerName(name);
-			}
-
 			if (subChannel.equals("Teleport")) {
 
 				boolean complete = false;

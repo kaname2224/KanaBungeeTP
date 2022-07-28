@@ -1,5 +1,6 @@
 package fr.kaname.kanabungeetp.listeners;
 
+import fr.felix911.apibukkit.ApiBukkit;
 import fr.kaname.kanabungeetp.KanaBungeeTP;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -24,7 +25,9 @@ public class EventListener implements Listener {
 				@Override
 				public void run() {
 					main.getPluginMessageManager().getServers(player);
-					main.getPluginMessageManager().getServerName(player);
+					while (main.getServerName().equalsIgnoreCase("")){
+						ApiBukkit.getServerName();
+					}
 					main.getLogger().info("Récupération des serveurs disponibles...");
 				}
 			}, 10);
