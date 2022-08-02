@@ -23,7 +23,7 @@ import fr.kaname.kanabungeetp.managers.PluginMessageManagers;
 
 public class KanaBungeeTP extends JavaPlugin {
 
-	private String serverName;
+	private String serverName = "";
 	private final DatabaseManager db;
 	private PluginMessageManagers pluginMessageManager;
 	private String[] servers;

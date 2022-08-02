@@ -20,17 +20,19 @@ public class EventListener implements Listener {
 	private void onJoin(PlayerJoinEvent event) {
 		String[] servers = main.getServers();
 		Player player = event.getPlayer();
+
 		if (servers == null) {
+
 			Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(main, new Runnable() {
 				@Override
 				public void run() {
 					main.getPluginMessageManager().getServers(player);
 					while (main.getServerName().equalsIgnoreCase("")){
-						ApiBukkit.getServerName();
+						main.setServerName(ApiBukkit.getServerName());
 					}
 					main.getLogger().info("Récupération des serveurs disponibles...");
 				}
-			}, 10);
+			}, 20);
 		}
 
 		if (main.getTeleportMap().containsKey(player.getUniqueId()) && player.isOnline()) {
