@@ -67,7 +67,7 @@ public class MenuListener implements Listener {
 					String sendServerName = server.getBungeeName();
 					
 					if(!sendServerName.equals(serverName)) {
-						ApiBukkit.teleportPlayerToServer(player, serverName);
+						ApiBukkit.teleportPlayerToServer(player, sendServerName);
 					} else {
 						player.sendMessage("§3[KanaBungeeTP] §eYou are already connected to this server !");
 					}

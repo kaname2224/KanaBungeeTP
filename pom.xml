@@ -67,7 +67,7 @@
         <profile>
             <id>Local</id>
             <build>
-                <directory>G:\code\KanaBungeeTP</directory>
+                <directory>G:\Server test\serveur\plugins</directory>
             </build>
         </profile>
     </profiles>
