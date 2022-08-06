@@ -26,6 +26,10 @@ public class DatabaseManager {
     private String serverTable;
     private String worldTable;
 
+	private String jdbcString;
+	private String DBUsername;
+	private String DBPassword;
+
     public DatabaseManager(KanaBungeeTP main) throws IOException, SQLException {
     	this.main = main;
     	Configuration dbinfos = main.getConfig();
@@ -40,13 +44,12 @@ public class DatabaseManager {
         String host = dbinfos.getString("database.host");
         String port = dbinfos.getString("database.port");
 
-        Connection connect = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + bdName, user, password);
-        Statement statement = connect.createStatement();
-
+		this.jdbcString = "jdbc:mysql://" + host + ":" + port + "/" + bdName;
+		this.DBUsername = user;
+		this.DBPassword = password;
         
         serverTable = dbinfos.getString("database.tables.servers");
         worldTable = dbinfos.getString("database.tables.worlds");
-        this.statement = statement;
         createTable();
     }
 	
@@ -64,7 +67,15 @@ public class DatabaseManager {
     }
     
     private Statement getSqlStatement(){
-    	return statement;
+
+		try {
+			Connection connect = DriverManager.getConnection(this.jdbcString, this.DBUsername, this.DBPassword);
+			return connect.createStatement();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return null;
     }
     
     public List<Servers> getServersList() {
