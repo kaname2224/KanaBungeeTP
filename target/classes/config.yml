@@ -1,14 +1,12 @@
 
-# KanaBungeeTP V.1.3 Config File #
-
-currentServerBungeeName: "server" # Server's name must be the same than proxy's config
+# KanaBungeeTP V.2.2.0 Config File #
 
 database:
   host: '127.0.0.1'
-  username: 'root'
-  password: 'sqldevtest'
+  username: ''
+  password: ''
   port: '3306'
-  name: 'test'
+  name: 'db'
 
   tables:
     servers: "KBT_servers"

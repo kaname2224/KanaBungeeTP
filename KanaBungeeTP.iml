@@ -11,8 +11,8 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../Server test/serveur/plugins/classes" />
-    <output-test url="file://$MODULE_DIR$/../../Server test/serveur/plugins/test-classes" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
@@ -38,7 +38,7 @@
     <orderEntry type="module-library">
       <library name="Maven: fr.felix911:apiBukkit:0.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Librairies/api/ApiBukkit-0.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/fr/felix911/apibukkit/Apibukkit/ApiBukkit/0.1/ApiBukkit-0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

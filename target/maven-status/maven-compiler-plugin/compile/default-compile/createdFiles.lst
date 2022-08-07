@@ -1,7 +1,6 @@
 fr\kaname\kanabungeetp\listeners\ChatListener.class
 fr\kaname\kanabungeetp\managers\PluginMessageManagers.class
 fr\kaname\kanabungeetp\commands\menu\AdminMenu.class
-fr\kaname\kanabungeetp\managers\CommandeCompletor.class
 fr\kaname\kanabungeetp\managers\DatabaseManager.class
 fr\kaname\kanabungeetp\commands\menu\bmenuAdd.class
 fr\kaname\kanabungeetp\listeners\EventListener$1.class
@@ -9,7 +8,6 @@ fr\kaname\kanabungeetp\listeners\EventListener.class
 fr\kaname\kanabungeetp\commands\Commandes.class
 fr\kaname\kanabungeetp\KanaBungeeTP.class
 fr\kaname\kanabungeetp\listeners\MenuListener.class
-fr\kaname\kanabungeetp\managers\completors\BadminCompletor.class
 fr\kaname\kanabungeetp\listeners\bmenuAdminListeners.class
 fr\kaname\kanabungeetp\listeners\PluginMessageListener.class
 fr\kaname\kanabungeetp\commands\menu\InvMenu.class

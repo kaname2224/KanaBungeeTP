@@ -6,7 +6,7 @@
 
     <groupId>fr.kaname</groupId>
     <artifactId>KanaBungeeTP</artifactId>
-    <version>2.3.1</version>
+    <version>2.3.2</version>
     <repositories>
     <!--Spigot Repo-->
     <repository>
@@ -46,7 +46,7 @@
             <artifactId>apiBukkit</artifactId>
             <version>0.1</version>
             <scope>system</scope>
-            <systemPath>G:/code/Librairies/api/ApiBukkit-0.1.jar</systemPath>
+            <systemPath>C:\Users\Maxime\.m2\repository\fr\felix911\apibukkit\Apibukkit\ApiBukkit\0.1\ApiBukkit-0.1.jar</systemPath>
         </dependency>
     </dependencies>
     <distributionManagement>
